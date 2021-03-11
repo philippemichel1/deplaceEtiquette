@@ -17,6 +17,7 @@ struct Mots: View {
     @State var montrerFenetreAPropos:Bool = false
     @State var montrerVueAuteur:Bool = false
     @State var montrerSafari:Bool = false
+    @Environment (\.presentationMode) var fermerFenetre
     
     var body: some View {
         ZStack {
@@ -39,9 +40,16 @@ struct Mots: View {
                             //fin de changement de position
                             .onEnded{ _ in
                                 if deplacement[0] != compare {
+                                    //presentation menu auteur
                                     Timer.scheduledTimer(withTimeInterval: 1.3, repeats: false) { (timer) in
                                         self.montrerVueAuteur = true
                                     }
+                                    //fermeture de la vue modale
+                                    Timer.scheduledTimer(withTimeInterval: 3.5, repeats: false) { (timer) in
+                                        self.montrerVueAuteur = false
+                                        self.fermerFenetre.wrappedValue.dismiss()
+                                    }
+                                    
                                 }
                             } // .onEnded
                         

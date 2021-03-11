@@ -11,5 +11,6 @@ import SwiftUI
 struct Ressources {
     enum images:String {
         case titastus = "logo"
+        case fermer = "xmark.circle.fill"
     }
 }
