@@ -23,7 +23,7 @@ struct Mots: View {
             ForEach(0..<listeMots.count) {nbElement in
                 Text(String(listeMots[nbElement]))
                     .font(.headline)
-                    .padding(5)
+                    .padding(10)
                     .frame(width: 150, height: 30, alignment: .center)
                     .foregroundColor(.white)
                     .background(couleurMots[nbElement])
@@ -47,32 +47,34 @@ struct Mots: View {
                         
                     )//DragGesture
             } //ForEach
-            // montre la vue auteur
-            if montrerVueAuteur {
-                ZStack(alignment: .center) {
-                    FenetreMenu(largeurFenetre: 270, hauteurFenetre: 130)
-                    VStack {
-                        Text("Philippe MICHEL")
-                            .font(.headline)
-                        HStack {
-                            Image(Ressources.images.titastus.rawValue)
-                                .resizable()
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                .aspectRatio(contentMode: .fit)
-                                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                            Button(action: {
-                                montrerSafari.toggle()
-                            }, label: {
-                                Text("www.titastus.com")
-                            }) .sheet(isPresented: $montrerSafari) {
-                                ControleurSafari(url: URL(string: self.urlString)!)
-                                    .padding()
-                            }
+            
+        } // ZStack
+        // montre la vue auteur
+        if montrerVueAuteur {
+            ZStack(alignment: .center) {
+                FenetreMenu(largeurFenetre: 270, hauteurFenetre: 130)
+                VStack {
+                    Text("Philippe MICHEL")
+                        .font(.headline)
+                    HStack {
+                        Image(Ressources.images.titastus.rawValue)
+                            .resizable()
+                            .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .aspectRatio(contentMode: .fit)
+                            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                        Button(action: {
+                            montrerSafari.toggle()
+                        }, label: {
+                            Text("www.titastus.com")
+                        }) .sheet(isPresented: $montrerSafari) {
+                            ControleurSafari(url: URL(string: self.urlString)!)
+                                .padding()
                         }
                     }
                 }
-            }//
-        }
+            }
+        }//
+        
     }
 }
 

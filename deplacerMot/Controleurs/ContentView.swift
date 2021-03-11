@@ -12,6 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Titre()
             Bouton(actionBouton: $actionAnimation)
         }
         if actionAnimation {
