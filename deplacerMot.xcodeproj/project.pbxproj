@@ -13,6 +13,12 @@
 		3751FADC25EE74B800CEC6B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3751FADB25EE74B800CEC6B4 /* Preview Assets.xcassets */; };
 		3751FAE725EE74B800CEC6B4 /* deplacerMotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3751FAE625EE74B800CEC6B4 /* deplacerMotTests.swift */; };
 		3751FAF225EE74B800CEC6B4 /* deplacerMotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3751FAF125EE74B800CEC6B4 /* deplacerMotUITests.swift */; };
+		3751FB0325EE755700CEC6B4 /* Mots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3751FB0225EE755700CEC6B4 /* Mots.swift */; };
+		376DFE1025F9125D00C2BE3A /* Bouton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376DFE0F25F9125D00C2BE3A /* Bouton.swift */; };
+		37BA8D4425FA16C1000FAD22 /* BoutonFermeture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BA8D4325FA16C1000FAD22 /* BoutonFermeture.swift */; };
+		37BA8D4925FA183B000FAD22 /* ControleurSafari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BA8D4825FA183B000FAD22 /* ControleurSafari.swift */; };
+		37BA8D4E25FA197D000FAD22 /* FenetreMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BA8D4D25FA197D000FAD22 /* FenetreMenu.swift */; };
+		37BA8D5425FA2CED000FAD22 /* Ressources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BA8D5325FA2CED000FAD22 /* Ressources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		3751FAED25EE74B800CEC6B4 /* deplacerMotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = deplacerMotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3751FAF125EE74B800CEC6B4 /* deplacerMotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deplacerMotUITests.swift; sourceTree = "<group>"; };
 		3751FAF325EE74B800CEC6B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3751FB0225EE755700CEC6B4 /* Mots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mots.swift; sourceTree = "<group>"; };
+		376DFE0F25F9125D00C2BE3A /* Bouton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bouton.swift; sourceTree = "<group>"; };
+		37BA8D4325FA16C1000FAD22 /* BoutonFermeture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonFermeture.swift; sourceTree = "<group>"; };
+		37BA8D4825FA183B000FAD22 /* ControleurSafari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControleurSafari.swift; sourceTree = "<group>"; };
+		37BA8D4D25FA197D000FAD22 /* FenetreMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenetreMenu.swift; sourceTree = "<group>"; };
+		37BA8D5325FA2CED000FAD22 /* Ressources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ressources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +107,10 @@
 		3751FAD325EE74B700CEC6B4 /* deplacerMot */ = {
 			isa = PBXGroup;
 			children = (
+				37BA8D5225FA2CB1000FAD22 /* Constantes */,
 				3751FAD425EE74B700CEC6B4 /* deplacerMotApp.swift */,
-				3751FAD625EE74B700CEC6B4 /* ContentView.swift */,
+				376DFE1825F92C3E00C2BE3A /* Controleurs */,
+				376DFE1725F92BDF00C2BE3A /* Vues */,
 				3751FAD825EE74B800CEC6B4 /* Assets.xcassets */,
 				3751FADD25EE74B800CEC6B4 /* Info.plist */,
 				3751FADA25EE74B800CEC6B4 /* Preview Content */,
@@ -128,6 +142,34 @@
 				3751FAF325EE74B800CEC6B4 /* Info.plist */,
 			);
 			path = deplacerMotUITests;
+			sourceTree = "<group>";
+		};
+		376DFE1725F92BDF00C2BE3A /* Vues */ = {
+			isa = PBXGroup;
+			children = (
+				376DFE0F25F9125D00C2BE3A /* Bouton.swift */,
+				37BA8D4D25FA197D000FAD22 /* FenetreMenu.swift */,
+				37BA8D4325FA16C1000FAD22 /* BoutonFermeture.swift */,
+				3751FB0225EE755700CEC6B4 /* Mots.swift */,
+			);
+			path = Vues;
+			sourceTree = "<group>";
+		};
+		376DFE1825F92C3E00C2BE3A /* Controleurs */ = {
+			isa = PBXGroup;
+			children = (
+				3751FAD625EE74B700CEC6B4 /* ContentView.swift */,
+				37BA8D4825FA183B000FAD22 /* ControleurSafari.swift */,
+			);
+			path = Controleurs;
+			sourceTree = "<group>";
+		};
+		37BA8D5225FA2CB1000FAD22 /* Constantes */ = {
+			isa = PBXGroup;
+			children = (
+				37BA8D5325FA2CED000FAD22 /* Ressources.swift */,
+			);
+			path = Constantes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37BA8D4425FA16C1000FAD22 /* BoutonFermeture.swift in Sources */,
+				37BA8D4E25FA197D000FAD22 /* FenetreMenu.swift in Sources */,
+				37BA8D5425FA2CED000FAD22 /* Ressources.swift in Sources */,
 				3751FAD725EE74B700CEC6B4 /* ContentView.swift in Sources */,
+				3751FB0325EE755700CEC6B4 /* Mots.swift in Sources */,
+				376DFE1025F9125D00C2BE3A /* Bouton.swift in Sources */,
 				3751FAD525EE74B700CEC6B4 /* deplacerMotApp.swift in Sources */,
+				37BA8D4925FA183B000FAD22 /* ControleurSafari.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

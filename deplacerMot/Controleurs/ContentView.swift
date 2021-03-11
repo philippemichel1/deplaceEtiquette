@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var actionAnimation:Bool = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Bouton(actionBouton: $actionAnimation)
+        }
+        if actionAnimation {
+            Mots()
+        }
     }
 }
 
