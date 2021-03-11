@@ -18,7 +18,7 @@ struct Bouton: View {
             }
             
         }, label: {
-            Text("Demarré")
+            Text("Demarrer")
                 .frame(width: 100, height: 100, alignment: .center)
                 .background(Color.yellow)
                 .foregroundColor(.black)
@@ -28,7 +28,6 @@ struct Bouton: View {
         )
         
     }
-    
 }
 
 struct bouton_Previews: PreviewProvider {
