@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var actionAnimation:Bool = false
+    @State var ouvrirVue:Bool = false
     
     var body: some View {
         VStack {
             Titre()
-            Bouton(actionBouton: $actionAnimation)
+            Spacer()
+            Bouton(actionBouton: $ouvrirVue)
+            Spacer()
         }
-        if actionAnimation {
+        .sheet(isPresented: $ouvrirVue) {
             Mots()
         }
     }

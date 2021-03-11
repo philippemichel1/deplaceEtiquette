@@ -11,21 +11,23 @@ struct Bouton: View {
      @Binding var actionBouton:Bool
     
     var body: some View {
-        
-        Button(action: {
-            withAnimation {
-                self.actionBouton.toggle()
+        ZStack {
+            Button(action: {
+                withAnimation {
+                    self.actionBouton.toggle()
+                }
+            }, label: {
+                Text("Demarrer")
+                    .frame(width: 100, height: 100, alignment: .center)
+                    .background(Color.yellow)
+                    .foregroundColor(.black)
+                    .clipShape(Circle())
+                    //.scaleEffect(actionBouton ? 0 : 1)
+                    .opacity(actionBouton ? 0 : 1)
+                   // .isHidden(actionBouton )
             }
-            
-        }, label: {
-            Text("Demarrer")
-                .frame(width: 100, height: 100, alignment: .center)
-                .background(Color.yellow)
-                .foregroundColor(.black)
-                .clipShape(Circle())
-                .scaleEffect(actionBouton ? 0 : 1)
+            )
         }
-        )
         
     }
 }
