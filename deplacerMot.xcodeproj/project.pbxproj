@@ -15,7 +15,6 @@
 		3751FAF225EE74B800CEC6B4 /* deplacerMotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3751FAF125EE74B800CEC6B4 /* deplacerMotUITests.swift */; };
 		3751FB0325EE755700CEC6B4 /* Mots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3751FB0225EE755700CEC6B4 /* Mots.swift */; };
 		376DFE1025F9125D00C2BE3A /* Bouton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376DFE0F25F9125D00C2BE3A /* Bouton.swift */; };
-		37BA8D4425FA16C1000FAD22 /* BoutonFermeture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BA8D4325FA16C1000FAD22 /* BoutonFermeture.swift */; };
 		37BA8D4925FA183B000FAD22 /* ControleurSafari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BA8D4825FA183B000FAD22 /* ControleurSafari.swift */; };
 		37BA8D4E25FA197D000FAD22 /* FenetreMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BA8D4D25FA197D000FAD22 /* FenetreMenu.swift */; };
 		37BA8D5425FA2CED000FAD22 /* Ressources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BA8D5325FA2CED000FAD22 /* Ressources.swift */; };
@@ -53,7 +52,6 @@
 		3751FAF325EE74B800CEC6B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3751FB0225EE755700CEC6B4 /* Mots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mots.swift; sourceTree = "<group>"; };
 		376DFE0F25F9125D00C2BE3A /* Bouton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bouton.swift; sourceTree = "<group>"; };
-		37BA8D4325FA16C1000FAD22 /* BoutonFermeture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonFermeture.swift; sourceTree = "<group>"; };
 		37BA8D4825FA183B000FAD22 /* ControleurSafari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControleurSafari.swift; sourceTree = "<group>"; };
 		37BA8D4D25FA197D000FAD22 /* FenetreMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenetreMenu.swift; sourceTree = "<group>"; };
 		37BA8D5325FA2CED000FAD22 /* Ressources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ressources.swift; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 			children = (
 				376DFE0F25F9125D00C2BE3A /* Bouton.swift */,
 				37BA8D4D25FA197D000FAD22 /* FenetreMenu.swift */,
-				37BA8D4325FA16C1000FAD22 /* BoutonFermeture.swift */,
 				3751FB0225EE755700CEC6B4 /* Mots.swift */,
 			);
 			path = Vues;
@@ -301,7 +298,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37BA8D4425FA16C1000FAD22 /* BoutonFermeture.swift in Sources */,
 				37BA8D4E25FA197D000FAD22 /* FenetreMenu.swift in Sources */,
 				37BA8D5425FA2CED000FAD22 /* Ressources.swift in Sources */,
 				3751FAD725EE74B700CEC6B4 /* ContentView.swift in Sources */,
