@@ -17,7 +17,7 @@ struct Bouton: View {
                     self.actionBouton.toggle()
                 }
             }, label: {
-                Text("Demarrer")
+                Text("Regardez !")
                     .font(.headline)
                     .frame(width: 100, height: 100, alignment: .center)
                     .background(Color.yellow)

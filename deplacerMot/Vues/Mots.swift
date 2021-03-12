@@ -9,11 +9,11 @@ import SwiftUI
 import SafariServices
 
 struct Mots: View {
-    let listeMots:[String] = ["poste","un", "recherche", "je"]
-    let couleurMots:[Color] = [.black,.red,.blue,.gray]
+    let listeMots:[String] = ["moi !","embauchez","moi","de","besoin", "avez", "Vous"]
+    let couleurMots:[Color] = [.black,.red,.blue,.gray,.green,.purple,.orange]
     let compare = CGSize.zero
     var urlString = "https://www.titastus.com"
-    @State private var deplacement:[CGSize] = [.zero,.zero,.zero,.zero]
+    @State private var deplacement:[CGSize] = [.zero,.zero,.zero,.zero,.zero,.zero,.zero]
     @State var montrerFenetreAPropos:Bool = false
     @State var montrerVueAuteur:Bool = false
     @State var montrerSafari:Bool = false
@@ -49,7 +49,7 @@ struct Mots: View {
                                     // si url site activer il faut enlever le timer ci-dessous.
                                     // il faut créer un bouton pour declancher la fermeture de la fenetre
                                   //---------------------------------------------------------------//
-                                    Timer.scheduledTimer(withTimeInterval: 3.5, repeats: false) { (timer) in
+                                    Timer.scheduledTimer(withTimeInterval: 4, repeats: false) { (timer) in
                                         self.montrerVueAuteur = false
                                         self.fermerFenetre.wrappedValue.dismiss()
                                     }

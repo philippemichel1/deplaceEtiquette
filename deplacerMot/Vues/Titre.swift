@@ -9,9 +9,9 @@ import SwiftUI
 
 struct Titre: View {
     var body: some View {
-        Text("Employeurs !")
+        Text("Employeurs, Entrepreneurs,...")
             .padding(10)
-            .font(.largeTitle)
+            .font(.title)
             .foregroundColor(.black)
             .background(Color.orange)
             .cornerRadius(10)
