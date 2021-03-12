@@ -18,13 +18,14 @@ struct Bouton: View {
                 }
             }, label: {
                 Text("Demarrer")
+                    .font(.headline)
                     .frame(width: 100, height: 100, alignment: .center)
                     .background(Color.yellow)
                     .foregroundColor(.black)
                     .clipShape(Circle())
-                    //.scaleEffect(actionBouton ? 0 : 1)
+                    .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 2, x: 2, y: 2)
                     .opacity(actionBouton ? 0 : 1)
-                   // .isHidden(actionBouton )
+                   
             }
             )
         }

@@ -14,7 +14,7 @@ struct Titre: View {
             .font(.largeTitle)
             .foregroundColor(.black)
             .background(Color.orange)
-            .cornerRadius(5)
+            .cornerRadius(10)
             .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 2, x: 2, y: 2)
     }
 }

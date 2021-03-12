@@ -25,6 +25,7 @@ struct Mots: View {
                 Text(String(listeMots[nbElement]))
                     .font(.headline)
                     .padding(10)
+                    
                     .frame(width: 150, height: 30, alignment: .center)
                     .foregroundColor(.white)
                     .background(couleurMots[nbElement])
@@ -45,6 +46,7 @@ struct Mots: View {
                                         self.montrerVueAuteur = true
                                     }
                                     //fermeture de la vue modale
+                                    // si url site activer il faut enlever le timer ci-dessous.
                                     Timer.scheduledTimer(withTimeInterval: 3.5, repeats: false) { (timer) in
                                         self.montrerVueAuteur = false
                                         self.fermerFenetre.wrappedValue.dismiss()
@@ -74,10 +76,12 @@ struct Mots: View {
                             montrerSafari.toggle()
                         }, label: {
                             Text("www.titastus.com")
-                        }) .sheet(isPresented: $montrerSafari) {
-                            ControleurSafari(url: URL(string: self.urlString)!)
-                                .padding()
-                        }
+                            
+                        })
+                        //pour activer le lien url activer les ligne ci-dessous.
+//                        .sheet(isPresented: $montrerSafari) {
+//                            ControleurSafari(url: URL(string: self.urlString)!)
+//                                .padding()}
                     }
                 }
             }
