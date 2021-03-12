@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Titre: View {
     var body: some View {
-        Text("Besoin de vous !")
+        Text("Employeurs !")
             .padding(10)
             .font(.largeTitle)
             .foregroundColor(.black)

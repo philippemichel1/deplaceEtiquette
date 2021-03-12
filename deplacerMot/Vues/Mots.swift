@@ -9,7 +9,7 @@ import SwiftUI
 import SafariServices
 
 struct Mots: View {
-    let listeMots:[String] = ["solution","la", "recherche", "je"]
+    let listeMots:[String] = ["poste","un", "recherche", "je"]
     let couleurMots:[Color] = [.black,.red,.blue,.gray]
     let compare = CGSize.zero
     var urlString = "https://www.titastus.com"
@@ -23,7 +23,7 @@ struct Mots: View {
         ZStack {
             ForEach(0..<listeMots.count) {nbElement in
                 Text(String(listeMots[nbElement]))
-                    .font(.headline)
+                    .font(.system(size: 20))
                     .padding(10)
                     
                     .frame(width: 150, height: 30, alignment: .center)
@@ -47,11 +47,13 @@ struct Mots: View {
                                     }
                                     //fermeture de la vue modale
                                     // si url site activer il faut enlever le timer ci-dessous.
+                                    // il faut créer un bouton pour declancher la fermeture de la fenetre
+                                  //---------------------------------------------------------------//
                                     Timer.scheduledTimer(withTimeInterval: 3.5, repeats: false) { (timer) in
                                         self.montrerVueAuteur = false
                                         self.fermerFenetre.wrappedValue.dismiss()
                                     }
-                                    
+                                  //---------------------------------------------------------------//
                                 }
                             } // .onEnded
                         
@@ -78,10 +80,12 @@ struct Mots: View {
                             Text("www.titastus.com")
                             
                         })
+                      //---------------------------------------------------------//
                         //pour activer le lien url activer les ligne ci-dessous.
 //                        .sheet(isPresented: $montrerSafari) {
 //                            ControleurSafari(url: URL(string: self.urlString)!)
 //                                .padding()}
+                      //---------------------------------------------------------//
                     }
                 }
             }
